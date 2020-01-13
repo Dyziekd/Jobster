@@ -31,4 +31,4 @@ It also contains several functionalities such as:
 ![Menu](https://user-images.githubusercontent.com/48474276/72256497-a50e3a00-3609-11ea-9ad1-c3d4f8e11099.jpg)
 ![Szczegóły oferty](https://user-images.githubusercontent.com/48474276/72256500-a5a6d080-3609-11ea-8e3d-adef6ba3e28f.jpg)
 ![Katalog ofert](https://user-images.githubusercontent.com/48474276/72256498-a50e3a00-3609-11ea-9fe2-900e39cdaee2.jpg)
-![Moje zgłoszenia](https://user-images.githubusercontent.com/48474276/72256684-0d5d1b80-360a-11ea-8b2b-b4c642adf8a4.png)
+![Moje zgłoszenia](https://user-images.githubusercontent.com/48474276/72256813-64fb8700-360a-11ea-9be4-00f0230a5b0e.jpg)
