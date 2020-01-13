@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <!-- Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:text="@string/profile_creator__step_one_text"
+        style="@style/ProfileCreatorTextStyle"/>
+
+    <!-- Gender layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <!-- Male button -->
+        <ImageButton
+            android:id="@+id/profile_creator__male_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/male_icon"/>
+
+        <!-- Female button -->
+        <ImageButton
+            android:id="@+id/profile_creator__female_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/female_icon"/>
+
+    </RelativeLayout>
+
+    <!-- Name label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/name_field_hint"/>
+
+    <!-- Name field -->
+    <EditText
+        android:id="@+id/profile_creator__name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"/>
+
+    <!-- Surname label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/surname_field_hint"/>
+
+    <!-- Surname field -->
+    <EditText
+        android:id="@+id/profile_creator__surname_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/surname_field_hint"
+        android:inputType="textCapWords"/>
+
+
+</LinearLayout>

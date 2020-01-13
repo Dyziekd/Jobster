@@ -1,0 +1,131 @@
+<resources>
+
+    <!-- My theme -->
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/holo_orange_light</item>
+        <item name="editTextStyle">@style/MyEditText</item>
+    </style>
+
+    <!-- My EditText -->
+    <style name="MyEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <!-- Offer details labels -->
+    <style name="OfferDetailsProviderNameStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="OfferDetailsPublicationDateStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="OfferDetailsOfferNameStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+    <style name="OfferDetailsPlaceStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="OfferDetailsAddressStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="OfferDetailsTimeStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="OfferDetailsDescriptionLabelStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="OfferDetailsDescriptionStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="OfferDetailsInactiveOfferMessageStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF0000</item>
+    </style>
+    <style name="OfferDetailsApplicationsCountStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
+
+    <!-- Listviews labels -->
+    <style name="OfferNameStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+    <style name="CityStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="TimeStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+    <style name="ProviderNameStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+    <style name="SalaryStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SalaryTypeStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="StatusStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+    <style name="ApplicationTimeStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+    <style name="ApplicantNameStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+    <style name="MessageStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+    <style name="EvaluatorNameStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CommentStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
+    <!-- Virtual profile labels -->
+    <style name="VirtualProfileLabelsStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <!-- Profile creator text -->
+    <style name="ProfileCreatorTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

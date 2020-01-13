@@ -1,0 +1,246 @@
+<resources>
+    <string name="app_name">Jobster</string>
+
+    <!-- States -->
+    <string-array name="state_array">
+        <item>Dolnośląskie</item>
+        <item>Kujawsko-pomorskie</item>
+        <item>Lubelskie</item>
+        <item>Lubuskie</item>
+        <item>Łódzkie</item>
+        <item>Małopolskie</item>
+        <item>Mazowieckie</item>
+        <item>Opolskie</item>
+        <item>Podkarpackie</item>
+        <item>Podlaskie</item>
+        <item>Pomorskie</item>
+        <item>Śląskie</item>
+        <item>Świętokrzyskie</item>
+        <item>Warmińsko-mazurskie</item>
+        <item>Wielkopolskie</item>
+        <item>Zachodniopomorskie</item>
+    </string-array>
+
+    <!-- Salary types -->
+    <string-array name="salary_type_array">
+        <item>na akord</item>
+        <item>za godzinę</item>
+        <item>za dzień</item>
+        <item>za całość</item>
+    </string-array>
+
+    <!-- TextViews -->
+    <!-- LoginActivity -->
+    <string name="login__registrer_hyperlink">Nie masz jeszcze konta? Zarejestruj się!</string>
+
+    <!-- RegisterActivity -->
+    <string name="register__account_type">Rodzaj konta</string>
+    <string name="register__account_type_employee">Pracownik</string>
+    <string name="register__account_type_employer">Pracodawca</string>
+    <string name="register__login_hyperlink">Masz już konto? Zaloguj się!</string>
+
+    <!-- ProfileCreatorActivity -->
+    <string name="profile_creator__step_one_text">Witaj w aplikacji Jobster! Aby rozpocząć uzupełnij swój wirtualny
+        profil, który będzie reprezentował Twoją osobę.\n\nNajpierw wybierz swoją płeć, a następnie podaj imię i
+        nazwisko.
+    </string>
+    <string name="profile_creator__step_two_text">Teraz podaj swoje podstawowe dane.</string>
+    <string name="profile_creator__step_three_text">Wskaż jeszcze swoje hobby oraz napisz kilka słów o sobie. Jeżeli
+        chcesz, możesz pozostawić te pola puste.
+    </string>
+    <string name="profile_creator__final_step_text">Twoje dane:\n</string>
+
+    <!-- VirtualProfileActivity -->
+    <string name="virtual_profile__contact_label"><u>Kontakt:</u></string>
+    <string name="virtual_profile__hobby_label"><u>Hobby:</u></string>
+    <string name="virtual_profile__about_me_label"><u>O sobie:</u></string>
+
+    <!-- AddOfferActivity -->
+    <string name="add_offer__salary_label">Stawka</string>
+    <string name="add_offer__start_time_label">Data rozpoczęcia</string>
+
+    <!-- OfferDetailsActivity -->
+    <string name="offer_details__description_label"><u>Opis:</u></string>
+    <string name="offer_details__inactive_offer_message">Ta oferta jest nieaktywna!</string>
+
+    <!-- Field hints -->
+    <string name="login_field_hint">Login</string>
+    <string name="login_email_field_hint">Login lub adres e-mail</string>
+    <string name="email_field_hint">E-mail</string>
+    <string name="password_field_hint">Hasło</string>
+    <string name="new_password_field_hint">Nowe hasło</string>
+    <string name="confirm_password_field_hint">Powtórz hasło</string>
+    <string name="name_field_hint">Imie</string>
+    <string name="surname_field_hint">Nazwisko</string>
+    <string name="phone_field_hint">Numer telefonu</string>
+    <string name="state_field_hint">Województwo</string>
+    <string name="new_state_field_hint">Nowe województwo</string>
+    <string name="city_field_hint">Miejscowość</string>
+    <string name="birthday_field_hint">Data urodzenia</string>
+    <string name="hobby_field_hint">Hobby</string>
+    <string name="description_field_hint">Opis</string>
+    <string name="offer_name_field_hint">Nazwa oferty</string>
+    <string name="salary_type_field_hint">Rodzaj wynagrodzenia</string>
+    <string name="address_field_hint">Adres</string>
+    <string name="application_message_field_hint">Wiadomość dla pracodawcy</string>
+    <string name="comment_field_hint">Komentarz</string>
+
+
+    <!-- Field errors -->
+    <string name="empty_login_error">Podaj login!</string>
+    <string name="empty_email_error">Podaj adres email!</string>
+    <string name="empty_login_email_error">Podaj login lub adres email!</string>
+    <string name="empty_password_error">Podaj hasło!</string>
+    <string name="empty_offer_name_error">Podaj nazwę oferty!</string>
+    <string name="empty_salary_error">Podaj wynagrodzenie!</string>
+    <string name="empty_city_error">Podaj miejscowość!</string>
+    <string name="empty_address_error">Podaj adres!</string>
+    <string name="empty_start_time_error">Data rozpoczęcia nie może być pusta!</string>
+    <string name="empty_phone_error">Podaj numer telefonu!</string>
+    <string name="too_short_phone_error">Podany numer telefonu jest za krótki\n</string>
+    <string name="too_long_phone_error">Podany numer telefonu jest za długi\n</string>
+    <string name="incorrect_salary_error">Wynagrodzenie musi być większe od 0!</string>
+    <string name="incorrect_email_error">Podano niepoprawny adres email!</string>
+    <string name="incorrect_confirm_password_error">Podane hasła różnią się!!</string>
+    <string name="profile_creator__empty_gender_error">- należy wybrać płeć\n</string>
+    <string name="profile_creator__empty_name_error">- należy podać imię\n</string>
+    <string name="profile_creator__empty_surname_error">- należy podać nazwisko\n</string>
+    <string name="profile_creator__empty_phone_error">- należy podać numer telefonu\n</string>
+    <string name="profile_creator__too_short_phone_error">- podany numer telefonu jest za krótki\n</string>
+    <string name="profile_creator__too_long_phone_error">- podany numer telefonu jest za długi\n</string>
+    <string name="profile_creator__empty_state_error">- należy wybrać województwo\n</string>
+    <string name="profile_creator__empty_city_error">- należy podać miejscowość\n</string>
+    <string name="profile_creator__empty_birthday_error">- należy wybrać datę urodzenia\n</string>
+
+
+    <!-- Button texts -->
+    <string name="yes_button_text">Tak</string>
+    <string name="no_button_text">Nie</string>
+    <string name="accept_button_text">Akceptuj</string>
+    <string name="reject_button_text">Odrzuć</string>
+    <string name="try_again_button_text">Spróbuj ponownie</string>
+    <string name="exit_button_text">Wyjdź</string>
+    <string name="login_button_text">Zaloguj się</string>
+    <string name="register_button_text">Zarejestruj się</string>
+    <string name="finish_button_text">Gotowe</string>
+    <string name="back_button_text">Wstecz</string>
+    <string name="next_button_text">Dalej</string>
+    <string name="ok_button_text">OK</string>
+    <string name="cancel_button_text">Anuluj</string>
+    <string name="catalog_button_text">Katalog ofert</string>
+    <string name="my_applications_button_text">Moje zgłoszenia</string>
+    <string name="my_offers_button_text">Moje oferty</string>
+    <string name="my_applications_history_button_text">Historia moich zgłoszeń</string>
+    <string name="my_offers_history_button_text">Historia moich ofert</string>
+    <string name="my_virtual_profile_button_text">Mój wirtualny profil</string>
+    <string name="settings_button_text">Ustawienia</string>
+    <string name="logout_button_text">Wyloguj</string>
+    <string name="check_opinions_button_text">Sprawdź opinie</string>
+    <string name="search_offers_button_text">Szukaj oferty</string>
+    <string name="add_offer_button_text">Dodaj ofertę</string>
+    <string name="choose_start_time_button_text">Ustaw datę rozpoczęcia</string>
+    <string name="change_password_button_text">Zmień hasło</string>
+    <string name="change_email_button_text">Zmień adres email</string>
+    <string name="change_phone_button_text">Zmień numer telefonu</string>
+    <string name="change_state_button_text">Zmień województwo</string>
+    <string name="change_city_button_text">Zmień miejscowość</string>
+    <string name="change_hobby_button_text">Zmień hobby</string>
+    <string name="change_description_button_text">Zmień swój opis</string>
+    <string name="make_application_button_text">Aplikuj</string>
+    <string name="show_applications_button_text">Pokaż aplikacje</string>
+    <string name="cancel_application_button_text">Wycofaj aplikację</string>
+    <string name="end_offer_button_text">Zakończ możliwość aplikacji</string>
+    <string name="show_employer_profile_button_text">Pokaż wirtualny profil pracodawcy</string>
+    <string name="show_employee_profile_button_text">Pokaż wirtualny profil pracownika</string>
+    <string name="add_opinion_button_text">Dodaj opinię</string>
+
+    <!-- Dialog titles -->
+    <string name="profile_creator__invalid_data_dialog_title">Wprowadzone dane nie są poprawne!</string>
+    <string name="date_picker_title">Podaj datę</string>
+    <string name="time_picker_title">Podaj godzinę</string>
+    <string name="change_password_dialog_title">Podaj nowe hasło</string>
+    <string name="change_email_dialog_title">Podaj nowy adres email</string>
+    <string name="change_phone_dialog_title">Podaj nowy numer telefonu</string>
+    <string name="change_city_dialog_title">Podaj nową miejscowość</string>
+    <string name="change_state_dialog_title">Podaj nowe województwo</string>
+    <string name="change_hobby_dialog_title">Podaj hobby</string>
+    <string name="change_description_dialog_title">Podaj nowy opis</string>
+    <string name="send_email_dialog_title">Wyślij email…</string>
+    <string name="make_application_dialog_title">Składanie aplikacji do oferty</string>
+    <string name="cancel_application_dialog_title">Anuluj aplikację</string>
+    <string name="application_reply_dialog_title">Odpowiedź na aplikację</string>
+    <string name="connection_error_dialog_title">Problem z połączeniem</string>
+    <string name="end_offer_dialog_title">Zamknij ofertę</string>
+
+
+    <!-- Dialog messages -->
+    <string name="login_dialog_message">Logowanie…</string>
+    <string name="register_dialog_message">Trwa zakładanie konta…</string>
+    <string name="create_profile_dialog_message">Tworzenie wirtualnego profilu…</string>
+    <string name="open_virtual_profile_dialog_message">Pobieranie danych użytkownika…</string>
+    <string name="add_offer_dialog_message">Tworzenie oferty…</string>
+    <string name="get_offers_dialog_message">Pobieranie ofert pracy…</string>
+    <string name="change_settings_dialog_message">Trwa aktualizacja danych…</string>
+    <string name="get_offer_details_message">Pobieranie danych…</string>
+    <string name="create_application_dialog_message">Aplikowanie do oferty…</string>
+    <string name="cancel_application_dialog_message">Czy napewno chcesz anulować aplikację do tej oferty?</string>
+    <string name="get_applications_dialog_message">Pobieranie zgłoszeń…</string>
+    <string name="accept_application_dialog_message">Czy napewno chcesz zaakceptować tę aplikację?</string>
+    <string name="reject_application_dialog_message">Czy napewno chcesz odrzucić tę aplikację?</string>
+    <string name="get_opinions_dialog_message">Pobieranie opinii…</string>
+    <string name="add_opinion_dialog_message">Dodawanie opinii…</string>
+    <string name="connection_error_dialog_message">Ta aplikacja wymaga połączenia z internetem!</string>
+    <string name="end_offer_dialog_message">Czy napewno chcesz zakończyć okres składania aplikacji na tę ofertę? Tej operacji nie można cofnąć!</string>
+
+
+    <!-- Toolbar titles -->
+    <string name="add_offer_toolbar_title">Dodaj nową ofertę</string>
+    <string name="offers_toolbar_title">Katalog ofert</string>
+    <string name="my_offers_toolbar_title">Moje oferty</string>
+    <string name="my_offers_history_toolbar_title">Historia moich ofert</string>
+    <string name="applications_toolbar_title">Moje zgłoszenia</string>
+    <string name="my_applications_history_toolbar_title">Historia moich zgłoszeń</string>
+    <string name="offer_applications_toolbar_title">Zgłoszenia do oferty</string>
+    <string name="settings_toolbar_title">Ustawienia konta</string>]
+    <string name="opinions_toolbar_title">Opinie</string>
+
+
+    <!-- JSON errors -->
+    <string name="login_json_extract_error">Wystąpił błąd podczas logowania. Prosimy spróbować później.</string>
+    <string name="register_json_extract_error">Wystąpił błąd podczas rejestracji. Prosimy spróbować później.</string>
+    <string name="create_profile_json_extract_error">Wystąpił błąd podczas tworzenia wirtualnego profilu. Prosimy
+        spróbować później.
+    </string>
+    <string name="get_profile_json_extract_error">Wystąpił błąd podczas pobierania danych wirtualnego profilu. Prosimy
+        spróbować później.
+    </string>
+    <string name="change_settings_json_extract_error">Wystąpił błąd podczas zmieniania ustawień. Prosimy spróbować
+        później.
+    </string>
+    <string name="add_offer_json_extract_error">Wystąpił błąd podczas tworzenia oferty. Prosimy spróbować później.
+    </string>
+    <string name="get_offers_json_extract_error">Wystąpił błąd podczas pobierania ofert. Prosimy spróbować później.
+    </string>
+    <string name="get_offer_details_json_extract_error">Wystąpił błąd podczas pobierania danych tej oferty. Prosimy
+        spróbować później.
+    </string>
+    <string name="create_application_json_extract_error">Wystąpił błąd podczas aplikowania do tej oferty. Prosimy
+        spróbować później.
+    </string>
+    <string name="cancel_application_json_extract_error">Wystąpił błąd podczas anulowania aplikacji. Prosimy spróbować
+        później.
+    </string>
+    <string name="get_applications_json_extract_error">Wystąpił błąd podczas pobierania zgłoszeń. Prosimy spróbować
+        później.
+    </string>
+    <string name="reply_application_json_extract_error">Wystąpił błąd podczas odpowiadania na to zgłoszenie. Prosimy
+        spróbować później.
+    </string>
+    <string name="get_opinions_json_extract_error">Wystąpił błąd podczas pobierania opinii. Prosimy spróbować później.
+    </string>
+    <string name="add_opinion_json_extract_error">Wystąpił błąd podczas wystawiania opinii. Prosimy spróbować później.
+    </string>
+    <string name="end_offer_json_extract_error">Wystąpił błąd podczas zamykania oferty. Prosimy spróbować później.
+    </string>
+
+</resources>

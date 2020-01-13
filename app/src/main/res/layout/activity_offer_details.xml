@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.Offers.OfferDetailsActivity">
+
+    <!-- Provider name and publication date layout -->
+    <LinearLayout
+        android:id="@+id/offer_details__upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+        <!-- Provider name -->
+        <TextView
+            android:id="@+id/offer_details__provider_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            style="@style/OfferDetailsProviderNameStyle"/>
+
+        <!-- Publication date -->
+        <TextView
+            android:id="@+id/offer_details__publication_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            style="@style/OfferDetailsPublicationDateStyle"/>
+
+    </LinearLayout>
+
+    <!-- Offer name -->
+    <TextView
+        android:id="@+id/offer_details__offer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/offer_details__upper_layout"
+        android:gravity="center_horizontal"
+        style="@style/OfferDetailsOfferNameStyle"/>
+
+    <LinearLayout
+        android:id="@+id/offer_details__place_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/offer_details__offer_name"
+        android:orientation="vertical">
+
+        <!-- Place (state and city)  -->
+        <TextView
+            android:id="@+id/offer_details__place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OfferDetailsPlaceStyle"/>
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/offer_details__address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/OfferDetailsAddressStyle"/>
+
+    </LinearLayout>
+
+    <!-- Map button -->
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/offer_details__offer_name"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/maps_icon"
+        android:onClick="openGoogleMaps"/>
+
+    <!-- Start time -->
+    <TextView
+        android:id="@+id/offer_details__start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/offer_details__place_layout"
+        style="@style/OfferDetailsTimeStyle"/>
+
+    <!-- Salary layout -->
+    <RelativeLayout
+        android:id="@+id/offer_details__salary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/offer_details__start_time">
+
+        <!-- Circle graphic -->
+        <ImageView
+            android:id="@+id/offer_details__circle_graphic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/blue_circle"/>
+
+        <!-- Salary -->
+        <TextView
+            android:id="@+id/offer_details__salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/offer_details__circle_graphic"
+            android:layout_alignEnd="@+id/offer_details__circle_graphic"
+            android:layout_alignTop="@+id/offer_details__circle_graphic"
+            android:layout_alignBottom="@+id/offer_details__circle_graphic"
+            android:gravity="center"
+            android:textSize="16sp"
+            style="@style/SalaryStyle"/>
+
+        <!-- Salary type -->
+        <TextView
+            android:id="@+id/offer_details__salary_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offer_details__salary"
+            android:gravity="center"
+            style="@style/SalaryTypeStyle"/>
+
+    </RelativeLayout>
+
+    <!-- Description label -->
+    <TextView
+        android:id="@+id/offer_details__description_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offer_details__salary_layout"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/offer_details__description_label"
+        style="@style/OfferDetailsDescriptionLabelStyle"/>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/offer_details__description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offer_details__description_label"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        style="@style/OfferDetailsDescriptionStyle"/>
+
+    <!-- Inactive offer message -->
+    <TextView
+        android:id="@+id/offer_details__inactive_offer_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offer_details__description"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="@string/offer_details__inactive_offer_message"
+        android:visibility="gone"
+        style="@style/OfferDetailsInactiveOfferMessageStyle"/>
+
+    <!-- Applications count -->
+    <TextView
+        android:id="@+id/offer_details__applications_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/offer_details__buttons_layout"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        style="@style/OfferDetailsApplicationsCountStyle"/>
+
+    <!-- Buttons layout -->
+    <LinearLayout
+        android:id="@+id/offer_details__buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <!-- Application button (for employees)-->
+        <Button
+            android:id="@+id/offer_details__make_application_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/make_application_button_text"
+            android:onClick="makeApplication"/>
+
+        <!-- Cancel application button (for employees)-->
+        <Button
+            android:id="@+id/offer_details__cancel_application_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/cancel_application_button_text"
+            android:onClick="cancelApplication"/>
+
+        <!-- Show applications button (for employers)-->
+        <Button
+            android:id="@+id/offer_details__show_applications_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/show_applications_button_text"
+            android:onClick="showApplications"/>
+
+        <!-- End offer button (for employers)-->
+        <Button
+            android:id="@+id/offer_details__end_offer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/end_offer_button_text"
+            android:onClick="endApplications"/>
+
+        <!-- Show virtual profile button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/show_employer_profile_button_text"
+            android:onClick="showProviderVirtualProfile"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

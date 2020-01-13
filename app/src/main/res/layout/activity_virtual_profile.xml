@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VirtualProfile.VirtualProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <!-- Basic info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <!-- Name and surname -->
+            <TextView
+                android:id="@+id/virtual_profile__name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textColor="@android:color/black"/>
+
+            <!-- State and city -->
+            <TextView
+                android:id="@+id/virtual_profile__address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textColor="@android:color/black"/>
+
+            <!-- Age -->
+            <TextView
+                android:id="@+id/virtual_profile__age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <!-- Contact -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/virtual_profile__contact_label"
+                style="@style/VirtualProfileLabelsStyle"/>
+
+            <!-- Phone layout -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- Phone -->
+                <TextView
+                    android:id="@+id/virtual_profile__phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <!-- Phone button -->
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/call_icon"
+                    android:onClick="makeCall"/>
+
+            </LinearLayout>
+
+            <!-- Email layout -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- Email -->
+                <TextView
+                    android:id="@+id/virtual_profile__email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <!-- Email button -->
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/email_icon"
+                    android:onClick="writeEmail"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Hobby layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <!-- Label -->
+            <TextView
+                android:id="@+id/virtual_profile__hobby_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/virtual_profile__hobby_label"
+                style="@style/VirtualProfileLabelsStyle"/>
+
+            <!-- Hobby -->
+            <TextView
+                android:id="@+id/virtual_profile__hobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <!-- Description layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <!-- Label -->
+            <TextView
+                android:id="@+id/virtual_profile__description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/virtual_profile__about_me_label"
+                style="@style/VirtualProfileLabelsStyle"/>
+
+            <!-- Description  -->
+            <TextView
+                android:id="@+id/virtual_profile__description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <!-- Rating layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <!-- Star graphic -->
+            <ImageView
+                android:id="@+id/virtual_profile__star_icon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/star_icon" />
+
+            <!-- Rating -->
+            <TextView
+                android:id="@+id/virtual_profile__rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/virtual_profile__star_icon"
+                android:layout_alignEnd="@id/virtual_profile__star_icon"
+                android:layout_alignTop="@+id/virtual_profile__star_icon"
+                android:layout_alignBottom="@id/virtual_profile__star_icon"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <!-- Check opinions button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/check_opinions_button_text"
+            android:onClick="openOpinionsActivity"/>
+
+        <!-- Add opinion button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/add_opinion_button_text"
+            android:onClick="openAddOpinionActivity"/>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

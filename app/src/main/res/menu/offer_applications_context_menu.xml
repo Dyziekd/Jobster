@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Accept application -->
+    <item
+        android:id="@+id/offer_applications_context_menu__accept_button"
+        android:title="@string/accept_button_text"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <!-- Reject application -->
+    <item
+        android:id="@+id/offer_applications_context_menu__reject_button"
+        android:title="@string/reject_button_text"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <!-- Show virtual profile  -->
+    <item
+        android:id="@+id/offer_applications_context_menu__show_profile_button"
+        android:title="@string/show_employee_profile_button_text"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>

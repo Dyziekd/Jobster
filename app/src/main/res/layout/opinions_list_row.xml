@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Evaluator name -->
+        <TextView
+                android:id="@+id/opinions_list__name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                style="@style/EvaluatorNameStyle"/>
+
+        <!-- Comment -->
+        <TextView
+                android:id="@+id/opinions_list__comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                style="@style/CommentStyle"/>
+
+    </LinearLayout>
+
+
+    <!-- Star graphic -->
+    <ImageView
+            android:id="@+id/opinions_list__star_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/star_icon" />
+
+    <!-- Rating -->
+    <TextView
+            android:id="@+id/opinions_list__rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/opinions_list__star_icon"
+            android:layout_alignEnd="@id/opinions_list__star_icon"
+            android:layout_alignTop="@+id/opinions_list__star_icon"
+            android:layout_alignBottom="@id/opinions_list__star_icon"
+            android:gravity="center"
+            android:textSize="13sp"/>
+
+</RelativeLayout>

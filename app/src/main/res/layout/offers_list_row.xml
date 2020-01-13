@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Left side layout -->
+    <LinearLayout
+        android:id="@+id/applications_list__left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <!-- Offer name -->
+        <TextView
+            android:id="@+id/applications_list__offer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            style="@style/OfferNameStyle"/>
+
+        <!-- Localization -->
+        <TextView
+            android:id="@+id/applications_list__city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CityStyle"/>
+
+        <!-- Start time -->
+        <TextView
+            android:id="@+id/applications_list__status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TimeStyle"/>
+
+    </LinearLayout>
+
+    <!-- Right side layout -->
+    <RelativeLayout
+        android:id="@+id/applications_list__right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_margin="3dp">
+
+        <!-- Provider name -->
+        <TextView
+            android:id="@+id/applications_list__application_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/ProviderNameStyle"/>
+
+        <!-- Salary layout -->
+        <RelativeLayout
+            android:id="@+id/applications_list__salary_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/applications_list__application_time">
+
+            <!-- Circle graphic -->
+            <ImageView
+                android:id="@+id/applications_list__circle_graphic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/blue_circle"/>
+
+            <!-- Salary -->
+            <TextView
+                android:id="@+id/applications_list__salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/applications_list__circle_graphic"
+                android:layout_alignEnd="@+id/applications_list__circle_graphic"
+                android:layout_alignTop="@+id/applications_list__circle_graphic"
+                android:layout_alignBottom="@+id/applications_list__circle_graphic"
+                android:gravity="center"
+                style="@style/SalaryStyle"/>
+
+        </RelativeLayout>
+
+        <!-- Salary type -->
+        <TextView
+            android:id="@+id/applications_list__salary_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/applications_list__salary_layout"
+            android:gravity="center"
+            style="@style/SalaryTypeStyle"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
